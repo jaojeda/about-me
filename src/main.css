@@ -7,24 +7,28 @@
 }
 
 header {
-    background-color: #D4AB9F;
+    background-color: #BFAE97;
 }
 
 .hobbiesTitle {
-    background-color: #D4AB9F;
+    background-color: #BFAE97;
 }
 
 .importantTitle {
-    background-color: #D4AB9F;
+    background-color: #BFAE97;
 }
 
 .quizTitle {
-    background-color: #D4AB9F;
+    background-color: #BFAE97;
 }
 
 body {
-    background-color: #9D9D8D;
-    font-family: "Roboto";    
+    font-family: "Roboto";
+    text-align: center;
+    background: #63734C;
+    background: -moz-linear-gradient(left, #63734C 0%, #9AA175 50%, #63734C 100%);
+    background: -webkit-linear-gradient(left, #63734C 0%, #9AA175 50%, #63734C 100%);
+    background: linear-gradient(to right, #63734C 0%, #9AA175 50%, #63734C 100%);
 }
 
 h1 {
@@ -39,4 +43,16 @@ h2 {
 
 button {
     font-family: "Roboto";
+}
+
+ul {
+    list-style-position: inside;
+}
+
+ol {
+    list-style-position: inside;
+}
+
+section {
+    background-color: #9AA175;
 }
