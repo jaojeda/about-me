@@ -5,7 +5,7 @@ const result = document.getElementById('quiz-result');
 
 
 quizButton.onclick = function() {
-    // const emptyString = '';
+    
 
     let name = '';
     
@@ -43,9 +43,17 @@ quizButton.onclick = function() {
         correctAnswers += 1;
     }
 
-    alert('See your restults!');
+    alert('See your results!');
+    
+    let response = 'Okay ' + name;
+    
 
-    let response = 'Okay ' + name + ', you got ' + correctAnswers + '/3 questions right.';
+    if(correctAnswers === 3) {
+        response += ', you got ' + correctAnswers + '/3 questions right. Great job!';
+    }
+    else {
+        response += ', you got ' + correctAnswers + '/3 questions right. Try again.';
+    }
 
     result.textContent = response;
 };  
