@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis|Roboto&display=swap');
+
+
+.profile {
+    width: 200px;
+    height: auto;
+}
+
+header {
+    background-color: #D4AB9F;
+}
+
+.hobbies {
+    background-color: #D4AB9F;
+}
+
+body {
+
+    background-color: #9D9D8D;
+    font-family: "Roboto";
+    
+}
+
+h1 {
+    font-family: "Dosis";
+    color: #48322D;
+}
+
+h2 {
+    font-family: "Dosis";
+    color: #48322D;
+}
