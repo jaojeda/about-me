@@ -9,7 +9,6 @@ let tries = 4;
 
 let correctNumber = Math.floor(Math.random() * 20) + 1;
 
-console.log(correctNumber);
 
 submitButton.addEventListener('click', () => {
     
