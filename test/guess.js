@@ -9,7 +9,7 @@ test('guess is higher', function(assert) {
     const expected = 1;
 
     //Act
-    const result = compareNumbers(guess);
+    const result = compareNumbers(guess, 4);
 
     //Assert
     assert.equal(result, expected);
@@ -22,7 +22,7 @@ test('guess is equal', function(assert) {
     const expected = 0;
 
     //Act
-    const result = compareNumbers(guess);
+    const result = compareNumbers(guess, 4);
 
     //Assert
     assert.equal(result, expected);
