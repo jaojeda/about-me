@@ -6,6 +6,10 @@
     height: auto;
 }
 
+a {
+    text-decoration: none;
+}
+
 header {
     background-color: #BFAE97;
 }
