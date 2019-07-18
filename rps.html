@@ -17,32 +17,32 @@
         <section>
             <h2>Can you beat me?</h2>
             <img class="profile" src="./assets/Picture Of Me.jpg" alt="picture of Jose and his dog">
-            <p id="resut">
-                <img id="hand" class="invisible" src="./assets/outline scissors.png">
-            </p>
         </section>
-
+        
         <section>
-            <h2>Choose wisely...</h2>
+            <h2 id="message">Choose wisely...</h2>
             <p>
                 <label>
                     <input type="radio" name="choice" value="rock">
-                    <img class="radio-image" src="./assets/outline rock.png">
+                    <img class="radio-image" src="./assets/rock.png">
                 </label>
-
+                
                 <label>
-                    <input type="radio" name="choice" value="paper">
-                    <img class="radio-image" src="./assets/outline paper.png">
+                    <input type="radio" name="choice" value="paper" checked>
+                    <img class="radio-image" src="./assets/paper.png">
                 </label>
-
+                
                 <label>
                     <input type="radio" name="choice" value="scissors">
-                    <img class="radio-image" src="./assets/outline scissors.png">
+                    <img class="radio-image" src="./assets/scissors.png">
                 </label>
             </p>
             <p>
                 <button id="throw-button">Throwdown!</button>
             </p>
+                <p id="resut">
+                    <img id="hand" class="invisible" src="./assets/scissors.png">
+                </p>
         </section>
 
         <section>
@@ -51,6 +51,7 @@
                 <span>Losses: <span class="count" id="loss-count">0</span></span>
             </p>
         </section>
+        <script type="module" src="./src/rps.js"></script>
     </main>
     
 </body>
