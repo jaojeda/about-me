@@ -17,8 +17,6 @@ throwButton.addEventListener('click', () => {
 
     const userThrow = userSelection.value;
 
-console.log(userThrow)
-
     const draw = opThrow === userThrow;
 
     const win = didPlayerWin(userThrow, opThrow);
