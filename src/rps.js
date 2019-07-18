@@ -3,16 +3,15 @@ import { didPlayerWin } from './get-throw.js';
 
 const throwButton = document.getElementById('throw-button');
 const opHand = document.getElementById('hand');
-const message = document.getElementById('message');
-const winCountDisplay = document.getElementById('win-count');
-const lossCountDisplay = document.getElementById('loss-count');
 
 let winCounter = 0;
 let lossCounter = 0;
 
-throwButton.addEventListener('click', () => {
-    const opThrow = getThrow();
+throwButton.addEventListener('click', throwDown);
 
+function throwDown() {
+
+    const opThrow = getThrow();
     makeVisible(opHand, opThrow);
 
     const userSelection = document.querySelector('input:checked');
@@ -20,22 +19,29 @@ throwButton.addEventListener('click', () => {
     const userThrow = userSelection.value;
 
     const draw = opThrow === userThrow;
-
     const win = didPlayerWin(userThrow, opThrow);
 
+
+
+
+    evaluateThrowdown(draw, win);
+}
+
+function evaluateThrowdown(draw, win) {
     if(draw) {
-        displayMessage('Draw! Try again!');
+        displayMessage('message', 'Draw! Try again!');
     }
     else if(win) {
-        displayMessage('Got me!');
+        displayMessage('message', 'Got me!');
         winCounter++;
-        winCountDisplay.textContent = winCounter;
-    } else {
-        displayMessage('Sorry, wanna try again?');
-        lossCounter++;
-        lossCountDisplay.textContent = lossCounter;
+        displayMessage('win-count', winCounter);
     }
-});
+    else {
+        displayMessage('message', 'Sorry, wanna try again?');
+        lossCounter++;
+        displayMessage('loss-count', lossCounter);
+    }
+}
 
 function makeVisible(elem, hand) {
     elem.classList.remove('invisible');
@@ -43,8 +49,9 @@ function makeVisible(elem, hand) {
     elem.src = src;
 }
 
-function displayMessage(msg) {
-    message.textContent = msg;
+function displayMessage(id, msg) {
+    console.log(id, msg);
+    document.getElementById(id).textContent = msg;
 }
 
 //compare see opponent choice
