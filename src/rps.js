@@ -13,10 +13,7 @@ let lossCounter = 0;
 throwButton.addEventListener('click', () => {
     const opThrow = getThrow();
 
-    opHand.classList.remove('invisible');
-    const src = 'assets/' + opThrow + '.png';
-
-    opHand.src = src;
+    makeVisible(opHand, opThrow);
 
     const userSelection = document.querySelector('input:checked');
 
@@ -39,6 +36,12 @@ throwButton.addEventListener('click', () => {
         lossCountDisplay.textContent = lossCounter;
     }
 });
+
+function makeVisible(elem, hand) {
+    elem.classList.remove('invisible');
+    const src = 'assets/' + hand + '.png';
+    elem.src = src;
+}
 
 function displayMessage(msg) {
     message.textContent = msg;
