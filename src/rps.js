@@ -27,18 +27,22 @@ throwButton.addEventListener('click', () => {
     const win = didPlayerWin(userThrow, opThrow);
 
     if(draw) {
-        message.textContent = 'Draw! Try again!';
+        displayMessage('Draw! Try again!');
     }
     else if(win) {
-        message.textContent = 'Got me!';
+        displayMessage('Got me!');
         winCounter++;
         winCountDisplay.textContent = winCounter;
     } else {
-        message.textContent = 'Sorry, wanna try again?';
+        displayMessage('Sorry, wanna try again?');
         lossCounter++;
         lossCountDisplay.textContent = lossCounter;
     }
 });
+
+function displayMessage(msg) {
+    message.textContent = msg;
+}
 
 //compare see opponent choice
     //click button
