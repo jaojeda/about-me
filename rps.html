@@ -4,9 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Play Some Rocks Paper Scissors!</title>
+    <link rel="stylesheet" href="./src/main.css">
+    <link rel="stylesheet" href="./src/rps.css">
 </head>
 <body>
+    <header>
+        <h1>Play Some Rocks Paper Scissors!</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Can you beat me?</h2>
+            <img class="profile" src="./assets/Picture Of Me.jpg" alt="picture of Jose and his dog">
+            <p id="resut">
+                <img id="hand" class="invisible" src="./assets/outline scissors.png">
+            </p>
+        </section>
+
+        <section>
+            <h2>Choose wisely...</h2>
+            <p>
+                <label>
+                    <input type="radio" name="choice" value="rock">
+                    <img class="radio-image" src="./assets/outline rock.png">
+                </label>
+
+                <label>
+                    <input type="radio" name="choice" value="paper">
+                    <img class="radio-image" src="./assets/outline paper.png">
+                </label>
+
+                <label>
+                    <input type="radio" name="choice" value="scissors">
+                    <img class="radio-image" src="./assets/outline scissors.png">
+                </label>
+            </p>
+            <p>
+                <button id="throw-button">Throwdown!</button>
+            </p>
+        </section>
+
+        <section>
+            <p>
+                <span>Wins: <span class="count" id="win-count">0</span></span>
+                <span>Losses: <span class="count" id="loss-count">0</span></span>
+            </p>
+        </section>
+    </main>
     
 </body>
 </html>
