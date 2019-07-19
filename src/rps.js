@@ -15,14 +15,10 @@ function throwDown() {
     makeVisible(opHand, opThrow);
 
     const userSelection = document.querySelector('input:checked');
-
     const userThrow = userSelection.value;
 
     const draw = opThrow === userThrow;
     const win = didPlayerWin(userThrow, opThrow);
-
-
-
 
     evaluateThrowdown(draw, win);
 }
