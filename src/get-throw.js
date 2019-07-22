@@ -36,6 +36,4 @@ function getThrowFromNumber(randomNumber) {
     }
 }
 
-export { getThrow };
-export { getThrowFromNumber };
-export { didPlayerWin };
+export { getThrow, getThrowFromNumber, didPlayerWin };
