@@ -13,12 +13,12 @@ submitButton.addEventListener('click', startGame);
 
 
 function startGame(){
-
     
     if(userInput.value < 1 || userInput.value > 20){
         alert("That's not a number between 1 and 20!");
         return;
-    } else {
+    } 
+    else {
 
         let guess = parseInt(userInput.value);
 
@@ -47,7 +47,6 @@ function startGame(){
             submitButton.disabled = true;
             answerMessage = 'Sorry, you are all out of tries.';
         }
-
 
         resultMessage(triesMessage, answerMessage);
     }

@@ -4,9 +4,9 @@ function getThrow() {
     //referenced https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random    
     const randomNumber = Math.floor(Math.random() * Math.floor(3));
     
-    const side = getThrowFromNumber(randomNumber);
+    const computerThrow = getThrowFromNumber(randomNumber);
     
-    return side;
+    return computerThrow;
 }
 
 function didPlayerWin(userThrow, opThrow) {

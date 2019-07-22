@@ -10,7 +10,7 @@ quizButton.onclick = function() {
     let name = '';
     
     const firstName = prompt('What\'s your first name?');
-    name = name + firstName;
+    name = firstName;
     
     const lastName = prompt('What\'s your last name?');
     name = name + ' ' + lastName;

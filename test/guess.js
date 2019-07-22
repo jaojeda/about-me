@@ -35,7 +35,7 @@ test('guess is lower', function(assert) {
     const expected = -1;
 
     //Act
-    const result = compareNumbers(guess);
+    const result = compareNumbers(guess, 4);
 
     //Assert
     assert.equal(result, expected);
