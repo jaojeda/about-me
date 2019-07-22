@@ -9,35 +9,51 @@ let tries = 4;
 
 let correctNumber = Math.floor(Math.random() * 20) + 1;
 
+submitButton.addEventListener('click', startGame);
 
-submitButton.addEventListener('click', () => {
-    
-    let guess = parseInt(userInput.value);
-    
-    tries -= 1;
-    
-    let triesMessage = 'You have ' + tries + ' left.';
-    let answerMessage = '';
- 
-    if((compareNumbers(guess, correctNumber) === 1) && (tries > 0)) {
-        answerMessage = 'You guessed too high! Try again.';
-    }
-    
-    else if((compareNumbers(guess, correctNumber) === -1) && (tries > 0)) {
-        answerMessage = 'You guessed low! Try again';
-    }
 
-    else if((compareNumbers(guess, correctNumber) === 0) && (tries > 0)) {
-        submitButton.disabled = true;
-        triesMessage = 'You got it with ' + tries + ' tries left.';
-        answerMessage = 'You guessed right! Great job!';
-    }
+function startGame(){
 
-    else {
-        submitButton.disabled = true;
-        answerMessage = 'Sorry, you are all out of tries.';
+    
+    if(userInput.value < 1 || userInput.value > 20){
+        alert("That's not a number between 1 and 20!");
+        return;
+    } else {
+
+        let guess = parseInt(userInput.value);
+
+        tries -= 1;
+
+        let triesMessage = 'You have ' + tries + ' left.';
+        let answerMessage = '';
+
+        if((compareNumbers(guess, correctNumber) === 0)) {
+            submitButton.disabled = true;
+            triesMessage = 'You got it with ' + tries + ' tries left.';
+            answerMessage = 'You guessed right! Great job!';
+            resultMessage(triesMessage, answerMessage);
+            return;
+        }
+        if(tries !== 0) {
+            if((compareNumbers(guess, correctNumber) === 1)) {
+                answerMessage = 'You guessed too high! Try again.';
+            }
+
+            else if((compareNumbers(guess, correctNumber) === -1)) {
+                answerMessage = 'You guessed low! Try again';
+            }
+        } else {
+
+            submitButton.disabled = true;
+            answerMessage = 'Sorry, you are all out of tries.';
+        }
+
+
+        resultMessage(triesMessage, answerMessage);
     }
+}
+function resultMessage(triesMessage, answerMessage) {
     triesDisplay.textContent = triesMessage;
     winLose.textContent = answerMessage;
+}
 
-});

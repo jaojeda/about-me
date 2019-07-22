@@ -11,6 +11,7 @@ label {
     height: auto;
     border: 5px solid transparent;
     border-radius: 100%;
+    margin: 0 20px;
 }
 
 input:checked + .radio-image {
@@ -19,4 +20,9 @@ input:checked + .radio-image {
 
 .invisible {
     visibility: hidden;
+}
+
+#hand {
+    height: 460px;
+    width: 460px;
 }
