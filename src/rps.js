@@ -1,5 +1,4 @@
-import { getThrow } from './get-throw.js';
-import { didPlayerWin } from './get-throw.js';
+import { getThrow, didPlayerWin } from './get-throw.js';
 
 const throwButton = document.getElementById('throw-button');
 const opHand = document.getElementById('hand');

@@ -41,7 +41,7 @@ test('no is false', function(assert) {
 test('No is false', function(assert) {
     //Arrange
     // Set up your parameters and expectations
-    const text = 'no';
+    const text = 'No';
     const expected = false;
     //Act 
     // Call the function you're testing and set the result to a const
