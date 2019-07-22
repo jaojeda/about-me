@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Guess The Number!</title>
+        <link rel="stylesheet" href="./src/main.css">
+        <link rel="stylesheet" href="./src/guess.css">
+    </head>
+    <body>
+
+        <header>
+            <h1>Guess The Number!</h1>
+            <nav>
+                <a href="./">About Me</a>
+                <a href="guess.html">Try My Guessing Game</a>
+                <a href="rps.html">Play Some Rocks, Paper, Scissors</a>
+            </nav>
+        </header>
+
+        <section>
+            <h2>Can you guess the number I'm thinking about?</h2>
+            <p>
+                Pick a number between 1 and 20: <input id="user-guess"
+                    type="number" min="1" max="20" value="1">
+            </p>
+            <button id="submit-button">Submit Your Answer!</button>
+        </section>
+
+        <section>
+            <p id="tries-counter">
+                You get 4 tries.
+            </p>
+            <p id="answer-message">
+                Try your luck!
+            </p>
+        </section>
+        <script type="module" src="./src/guess.js"></script>
+    </body>
+</html>

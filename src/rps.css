@@ -1,0 +1,28 @@
+input {
+    display: none;
+}
+
+label {
+    cursor: pointer;
+}
+
+.radio-image {
+    width: 200px;
+    height: auto;
+    border: 5px solid transparent;
+    border-radius: 100%;
+    margin: 0 20px;
+}
+
+input:checked + .radio-image {
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.7);
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+#hand {
+    height: 460px;
+    width: 460px;
+}

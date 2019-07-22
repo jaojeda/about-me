@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis|Roboto&display=swap');
+
+
+.profile {
+    width: 200px;
+    height: auto;
+}   
+
+header {
+    background-color: #BFAE97;
+}
+
+.hobbiesTitle {
+    background-color: #BFAE97;
+}
+
+.importantTitle {
+    background-color: #BFAE97;
+}
+
+.quizTitle {
+    background-color: #BFAE97;
+}
+
+body {
+    font-family: "Roboto";
+    text-align: center;
+    background: #63734C;
+    background: -moz-linear-gradient(left, #63734C 0%, #9AA175 50%, #63734C 100%);
+    background: -webkit-linear-gradient(left, #63734C 0%, #9AA175 50%, #63734C 100%);
+    background: linear-gradient(to right, #63734C 0%, #9AA175 50%, #63734C 100%);
+}
+
+h1 {
+    font-family: "Dosis";
+    color: #48322D;
+}
+
+h2 {
+    font-family: "Dosis";
+    color: #48322D;
+}
+
+button {
+    font-family: "Roboto";
+}
+
+ul {
+    list-style-position: inside;
+}
+
+ol {
+    list-style-position: inside;
+}
+
+section {
+    background-color: #9AA175;
+}

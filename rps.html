@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Play Some Rocks Paper Scissors!</title>
+    <link rel="stylesheet" href="./src/main.css">
+    <link rel="stylesheet" href="./src/rps.css">
+</head>
+<body>
+    <header>
+        <h1>Play Some Rocks Paper Scissors!</h1>
+        <a href="./">About Me</a>
+        <a href="guess.html">Try My Guessing Game</a>
+        <a href="rps.html">Play Some Rocks, Paper, Scissors</a>
+    </header>
+
+    <main>
+        <section>
+            <h2>Can you beat me?</h2>
+            <img class="profile" src="./assets/Picture Of Me.jpg" alt="picture of Jose and his dog">
+        </section>
+        
+        <section>
+            <h2 id="message">Choose wisely...</h2>
+            <p>
+                <label>
+                    <input type="radio" name="choice" value="rock">
+                    <img class="radio-image" src="./assets/rock.png">
+                </label>
+                
+                <label>
+                    <input type="radio" name="choice" value="paper" checked>
+                    <img class="radio-image" src="./assets/paper.png">
+                </label>
+                
+                <label>
+                    <input type="radio" name="choice" value="scissors">
+                    <img class="radio-image" src="./assets/scissors.png">
+                </label>
+            </p>
+            <p>
+                <button id="throw-button">Throwdown!</button>
+            </p>
+                <p id="resut">
+                    <img id="hand" class="invisible" src="./assets/scissors.png">
+                </p>
+        </section>
+
+        <section>
+            <p>
+                <span>Wins: <span class="count" id="win-count">0</span></span>
+                <span>Losses: <span class="count" id="loss-count">0</span></span>
+            </p>
+        </section>
+        <script type="module" src="./src/rps.js"></script>
+    </main>
+    
+</body>
+</html>
