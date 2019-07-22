@@ -20,15 +20,15 @@ submitButton.addEventListener('click', () => {
     let triesMessage = 'You have ' + tries + ' left.';
     let answerMessage = '';
  
-    if((compareNumbers(guess, correctNumber) === 1) && (tries > 0)) {
+    if((compareNumbers(guess, correctNumber) === 1) && tries > 0) {
         answerMessage = 'You guessed too high! Try again.';
     }
     
-    else if((compareNumbers(guess, correctNumber) === -1) && (tries > 0)) {
+    else if((compareNumbers(guess, correctNumber) === -1) && tries > 0) {
         answerMessage = 'You guessed low! Try again';
     }
 
-    else if((compareNumbers(guess, correctNumber) === 0) && (tries > 0)) {
+    else if((compareNumbers(guess, correctNumber) === 0) && tries > 0) {
         submitButton.disabled = true;
         triesMessage = 'You got it with ' + tries + ' tries left.';
         answerMessage = 'You guessed right! Great job!';
