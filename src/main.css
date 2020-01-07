@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Dosis|Roboto&display=swap');
 
-
 .profile {
     width: 200px;
     height: auto;
@@ -8,18 +7,7 @@
 
 header {
     background-color: #BFAE97;
-}
-
-.hobbiesTitle {
-    background-color: #BFAE97;
-}
-
-.importantTitle {
-    background-color: #BFAE97;
-}
-
-.quizTitle {
-    background-color: #BFAE97;
+    border-radius: 20px;
 }
 
 body {
@@ -39,6 +27,8 @@ h1 {
 h2 {
     font-family: "Dosis";
     color: #48322D;
+    background-color: #BFAE97;
+    border-radius: 20px;
 }
 
 button {
@@ -55,4 +45,5 @@ ol {
 
 section {
     background-color: #9AA175;
+    border-radius: 20px;
 }
